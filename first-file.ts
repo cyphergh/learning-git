@@ -10,7 +10,7 @@ export async function checkPassword(password:string):Promise<boolean>{
 
 try{
  const status:boolean = await checkPassword(userArgs[0]);
- if(status) {
+ if(!status) {
    console.log("You got the password",status);
    } else {
    console.log("Password error",status);
